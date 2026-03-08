@@ -3,12 +3,14 @@ import heroImage from "@/assets/hero-doner.jpg";
 import menuWrap from "@/assets/menu-wrap.jpg";
 import menuPlate from "@/assets/menu-plate.jpg";
 import menuFalafel from "@/assets/menu-falafel.jpg";
+import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
     <div className="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="#" className="font-display text-2xl font-bold text-primary">
-        Döner Fame
+      <a href="#" className="flex items-center gap-2">
+        <img src={logo} alt="Döner Fame logo" className="h-10 w-10 object-contain" />
+        <span className="font-display text-2xl font-bold text-primary">Döner Fame</span>
       </a>
       <div className="hidden md:flex items-center gap-8 font-body text-sm font-medium tracking-wide">
         <a href="#menu" className="text-foreground hover:text-primary transition-colors">Menu</a>
@@ -68,19 +70,16 @@ const menuItems = [
   {
     name: "Classic Döner Wrap",
     description: "Tender lamb döner, fresh salad, red onions, tomatoes & our signature sauce",
-    price: "€8.90",
     image: menuWrap,
   },
   {
     name: "Döner Plate",
     description: "Generous döner meat with rice pilaf, grilled vegetables & garlic yogurt",
-    price: "€12.90",
     image: menuPlate,
   },
   {
     name: "Falafel Bowl",
     description: "Crispy house-made falafel, hummus, fresh salad & tahini dressing",
-    price: "€10.90",
     image: menuFalafel,
   },
 ];
@@ -110,10 +109,7 @@ const Menu = () => (
               />
             </div>
             <div className="p-6">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-display text-xl font-semibold text-foreground">{item.name}</h3>
-                <span className="font-display text-lg font-bold text-primary">{item.price}</span>
-              </div>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-2">{item.name}</h3>
               <p className="font-body text-muted-foreground text-sm leading-relaxed">
                 {item.description}
               </p>
