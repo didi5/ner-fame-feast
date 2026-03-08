@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Clock, Instagram, Facebook } from "lucide-react";
 import heroImage from "@/assets/hero-doner.jpg";
 import menuWrap from "@/assets/menu-wrap.jpg";
 import menuPlate from "@/assets/menu-plate.jpg";
@@ -173,23 +173,17 @@ const Contact = () => (
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-12">
           Visit Döner Fame
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-lg mx-auto">
           <div className="flex flex-col items-center gap-3">
             <MapPin className="w-6 h-6 opacity-80" />
             <p className="font-body text-sm opacity-90 leading-relaxed">
-              123 Main Street<br />Your City, 12345
+              NOVA Shoppingcenter<br />Merseburger Landstraße<br />06237 Leuna
             </p>
           </div>
           <div className="flex flex-col items-center gap-3">
             <Clock className="w-6 h-6 opacity-80" />
             <p className="font-body text-sm opacity-90 leading-relaxed">
-              Mon–Sat: 11:00–22:00<br />Sun: 12:00–21:00
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-3">
-            <Phone className="w-6 h-6 opacity-80" />
-            <p className="font-body text-sm opacity-90 leading-relaxed">
-              +49 123 456 789<br />info@donerfame.com
+              Mo–Do: 10:00–19:00<br />Fr–Sa: 10:00–20:00
             </p>
           </div>
         </div>
