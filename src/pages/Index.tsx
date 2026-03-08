@@ -1,4 +1,4 @@
-import { MapPin, Phone, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Clock, Instagram, Facebook } from "lucide-react";
 import heroImage from "@/assets/hero-doner.jpg";
 import menuWrap from "@/assets/menu-wrap.jpg";
 import menuPlate from "@/assets/menu-plate.jpg";
