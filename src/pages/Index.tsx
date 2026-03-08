@@ -3,6 +3,7 @@ import heroImage from "@/assets/hero-doner.jpg";
 import menuWrap from "@/assets/menu-wrap.jpg";
 import menuPlate from "@/assets/menu-plate.jpg";
 import menuFalafel from "@/assets/menu-falafel.jpg";
+import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
