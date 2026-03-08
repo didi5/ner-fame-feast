@@ -109,10 +109,7 @@ const Menu = () => (
               />
             </div>
             <div className="p-6">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-display text-xl font-semibold text-foreground">{item.name}</h3>
-                <span className="font-display text-lg font-bold text-primary">{item.price}</span>
-              </div>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-2">{item.name}</h3>
               <p className="font-body text-muted-foreground text-sm leading-relaxed">
                 {item.description}
               </p>
