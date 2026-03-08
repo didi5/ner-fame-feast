@@ -8,8 +8,9 @@ import logo from "@/assets/logo.jpeg";
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
     <div className="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="#" className="font-display text-2xl font-bold text-primary">
-        Döner Fame
+      <a href="#" className="flex items-center gap-2">
+        <img src={logo} alt="Döner Fame logo" className="h-10 w-10 object-contain" />
+        <span className="font-display text-2xl font-bold text-primary">Döner Fame</span>
       </a>
       <div className="hidden md:flex items-center gap-8 font-body text-sm font-medium tracking-wide">
         <a href="#menu" className="text-foreground hover:text-primary transition-colors">Menu</a>
