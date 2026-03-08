@@ -70,19 +70,16 @@ const menuItems = [
   {
     name: "Classic Döner Wrap",
     description: "Tender lamb döner, fresh salad, red onions, tomatoes & our signature sauce",
-    price: "€8.90",
     image: menuWrap,
   },
   {
     name: "Döner Plate",
     description: "Generous döner meat with rice pilaf, grilled vegetables & garlic yogurt",
-    price: "€12.90",
     image: menuPlate,
   },
   {
     name: "Falafel Bowl",
     description: "Crispy house-made falafel, hummus, fresh salad & tahini dressing",
-    price: "€10.90",
     image: menuFalafel,
   },
 ];
