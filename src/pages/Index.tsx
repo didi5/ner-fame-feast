@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import wrapImage from "@/assets/menu-wrap.jpg";
-import heroDoner from "@/assets/hero-doner.png.asset.json";
+import menuWrapAsset from "@/assets/menu-wrap.png.asset.json";
 import menuPlateAsset from "@/assets/menu-plate.png.asset.json";
 import menuBoxAsset from "@/assets/menu-box.png.asset.json";
 import menuFalafel from "@/assets/menu-falafel.jpg";
