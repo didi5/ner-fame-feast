@@ -62,7 +62,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-foreground">
       <div className="absolute inset-y-0 right-0 w-full md:w-[62%] lg:w-[55%]">
-        <img src={heroDoner.url} alt="Frischer Döner Wrap" className="w-full h-full object-cover" />
+        <img src={menuPlateAsset.url} alt="Frischer Dönerteller" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/60 to-transparent md:from-foreground md:via-foreground/40 md:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
       </div>
