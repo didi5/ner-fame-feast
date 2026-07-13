@@ -195,6 +195,31 @@ const Menu = () => (
   </section>
 );
 
+const VegetarianMenu = () => (
+  <section className="py-24 md:py-32 bg-foreground text-background">
+    <div className="container mx-auto px-6">
+      <div className="max-w-3xl mx-auto text-center mb-12">
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <span className="h-px w-12 bg-background/60" />
+          <span className="font-body text-[11px] uppercase tracking-[0.4em] text-background/70">Vegetarisch</span>
+          <span className="h-px w-12 bg-background/60" />
+        </div>
+        <h2 className="font-display text-4xl md:text-5xl font-bold leading-[1]">
+          Eine große Auswahl an <span className="italic font-light text-primary/90">vegetarischen Speisen.</span>
+        </h2>
+      </div>
+      <div className="max-w-6xl mx-auto overflow-hidden rounded-2xl border border-background/10 shadow-2xl">
+        <img
+          src={menuBoardAsset.url}
+          alt="Vegetarische Speisekarte mit Halloumi, Salat, Falafel und Getränken"
+          loading="lazy"
+          className="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+  </section>
+);
+
 const Visit = () => (
   <section id="besuch" className="py-24 md:py-32 bg-primary text-primary-foreground">
     <div className="container mx-auto px-6">
