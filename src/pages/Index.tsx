@@ -3,8 +3,8 @@ import menuWrapAsset from "@/assets/menu-wrap.png.asset.json";
 import menuPlateAsset from "@/assets/menu-plate.png.asset.json";
 import menuBoxAsset from "@/assets/menu-box.png.asset.json";
 import menuLahmacunAsset from "@/assets/menu-lahmacun.png.asset.json";
+import menuBoardAsset from "@/assets/menu-board.png.asset.json";
 import menuFalafel from "@/assets/menu-falafel.jpg";
-import menuVeggie from "@/assets/menu-veggie.jpg";
 import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
@@ -147,9 +147,7 @@ const menu = [
   { name: "Dönerteller", desc: "Zartes Döner-Fleisch mit Reis, gegrilltem Gemüse & Knoblauch-Joghurt.", image: menuPlateAsset.url, tag: "Klassiker" },
   { name: "Dönerbox", desc: "Deine Lieblings-Zutaten in der Box — perfekt zum Mitnehmen.", image: menuBoxAsset.url, tag: "To Go" },
   { name: "Türkischer Wrap", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: menuLahmacunAsset.url, tag: "Klassiker" },
-  { name: "Halloumi Wrap", desc: "Gegrillter Halloumi, buntes Gemüse und Kräuter — 100% vegetarisch.", image: menuVeggie, tag: "Vegetarisch" },
   { name: "Falafel Bowl", desc: "Hausgemachte, knusprige Falafel mit Hummus, Salat und Tahini.", image: menuFalafel, tag: "Vegan" },
-  { name: "Veggie Teller", desc: "Reis, gegrilltes Gemüse, Hummus und Salat — herzhaft & leicht.", image: menuVeggie, tag: "Vegetarisch" },
 ];
 
 const Menu = () => (
@@ -192,6 +190,31 @@ const Menu = () => (
             </div>
           </article>
         ))}
+      </div>
+    </div>
+  </section>
+);
+
+const VegetarianMenu = () => (
+  <section className="py-24 md:py-32 bg-foreground text-background">
+    <div className="container mx-auto px-6">
+      <div className="max-w-3xl mx-auto text-center mb-12">
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <span className="h-px w-12 bg-background/60" />
+          <span className="font-body text-[11px] uppercase tracking-[0.4em] text-background/70">Vegetarisch</span>
+          <span className="h-px w-12 bg-background/60" />
+        </div>
+        <h2 className="font-display text-4xl md:text-5xl font-bold leading-[1]">
+          Eine große Auswahl an <span className="italic font-light text-primary/90">vegetarischen Speisen.</span>
+        </h2>
+      </div>
+      <div className="max-w-6xl mx-auto overflow-hidden rounded-2xl border border-background/10 shadow-2xl">
+        <img
+          src={menuBoardAsset.url}
+          alt="Vegetarische Speisekarte mit Halloumi, Salat, Falafel und Getränken"
+          loading="lazy"
+          className="w-full h-auto object-cover"
+        />
       </div>
     </div>
   </section>
@@ -264,6 +287,7 @@ const Index = () => (
     <Hero />
     <Marquee />
     <Menu />
+    <VegetarianMenu />
     <Visit />
     <Footer />
   </div>
