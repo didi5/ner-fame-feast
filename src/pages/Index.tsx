@@ -61,14 +61,14 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-foreground">
-      <div className="absolute inset-y-0 right-0 w-full md:w-[62%] lg:w-[55%]">
+      <div className="absolute inset-0">
         <img src={menuPlateAsset.url} alt="Frischer Dönerteller" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/60 to-transparent md:from-foreground md:via-foreground/40 md:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/40 to-transparent md:from-foreground/80 md:via-foreground/30 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 pt-28 pb-32">
-        <div className="max-w-2xl">
+      <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-28 pt-28 pb-32">
+        <div className="max-w-xl md:ml-[8%] lg:ml-[15%]">
           <div className="flex items-center gap-4 mb-8 animate-fade-in-up">
             <span className="h-px w-12 bg-background/50" />
             <span className="font-body text-[11px] uppercase tracking-[0.4em] text-background/70">
@@ -77,14 +77,14 @@ const Hero = () => {
           </div>
 
           <h1 className="font-display text-background leading-[0.9] tracking-tight animate-fade-in-up">
-            <span className="block text-7xl md:text-8xl lg:text-[10rem] font-bold">Döner</span>
-            <span className="block text-6xl md:text-7xl lg:text-[8rem] italic font-light text-primary/90 -mt-2 md:-mt-4">
+            <span className="block text-6xl md:text-7xl lg:text-8xl font-bold">Döner</span>
+            <span className="block text-5xl md:text-6xl lg:text-7xl italic font-light text-primary/90 -mt-1 md:-mt-2">
               Fame.
             </span>
           </h1>
 
-          <div className="mt-10 max-w-md animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
-            <p className="font-display italic text-background/90 text-2xl md:text-3xl leading-snug">
+          <div className="mt-8 max-w-sm animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
+            <p className="font-display italic text-background/90 text-xl md:text-2xl leading-snug">
               „Willkommen — schön, dass du da bist."
             </p>
             <p className="font-body text-background/60 text-sm md:text-base leading-relaxed mt-4">
@@ -93,7 +93,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="mt-12 flex flex-wrap items-center gap-4 animate-fade-in-up" style={{ animationDelay: "0.35s", opacity: 0 }}>
+          <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-in-up" style={{ animationDelay: "0.35s", opacity: 0 }}>
             <a
               href="#karte"
               className="group inline-flex items-center gap-3 bg-primary text-primary-foreground pl-6 pr-3 py-3 rounded-full font-body text-sm uppercase tracking-[0.2em] hover:bg-primary-dark transition-colors"
