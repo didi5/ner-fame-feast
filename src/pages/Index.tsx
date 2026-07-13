@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import wrapImage from "@/assets/menu-wrap.jpg";
+import heroDoner from "@/assets/hero-doner.png.asset.json";
 import menuPlate from "@/assets/menu-plate.jpg";
 import menuBox from "@/assets/menu-box.jpg";
 import menuFalafel from "@/assets/menu-falafel.jpg";
@@ -62,7 +63,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-foreground">
       <div className="absolute inset-y-0 right-0 w-full md:w-[62%] lg:w-[55%]">
-        <img src={wrapImage} alt="Frischer Döner Wrap" className="w-full h-full object-cover" />
+        <img src={heroDoner.url} alt="Frischer Döner Wrap" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/60 to-transparent md:from-foreground md:via-foreground/40 md:to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
       </div>
