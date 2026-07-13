@@ -4,7 +4,6 @@ import menuPlateAsset from "@/assets/menu-plate.png.asset.json";
 import menuBoxAsset from "@/assets/menu-box.png.asset.json";
 import menuLahmacunAsset from "@/assets/menu-lahmacun.png.asset.json";
 import menuBoardAsset from "@/assets/menu-board.png.asset.json";
-import menuFalafel from "@/assets/menu-falafel.jpg";
 import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
@@ -147,7 +146,6 @@ const menu = [
   { name: "Dönerteller", desc: "Zartes Döner-Fleisch mit Reis, gegrilltem Gemüse & Knoblauch-Joghurt.", image: menuPlateAsset.url, tag: "Klassiker" },
   { name: "Dönerbox", desc: "Deine Lieblings-Zutaten in der Box — perfekt zum Mitnehmen.", image: menuBoxAsset.url, tag: "To Go" },
   { name: "Türkischer Wrap", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: menuLahmacunAsset.url, tag: "Klassiker" },
-  { name: "Falafel Bowl", desc: "Hausgemachte, knusprige Falafel mit Hummus, Salat und Tahini.", image: menuFalafel, tag: "Vegan" },
 ];
 
 const Menu = () => (
