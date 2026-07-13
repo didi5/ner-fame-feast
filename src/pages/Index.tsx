@@ -287,6 +287,7 @@ const Index = () => (
     <Hero />
     <Marquee />
     <Menu />
+    <VegetarianMenu />
     <Visit />
     <Footer />
   </div>
