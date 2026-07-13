@@ -145,7 +145,7 @@ const Hero = () => {
 const menu = [
   { name: "Dönerteller", desc: "Zartes Döner-Fleisch mit Reis, gegrilltem Gemüse & Knoblauch-Joghurt.", image: menuPlateAsset.url, tag: "Klassiker" },
   { name: "Dönerbox", desc: "Deine Lieblings-Zutaten in der Box — perfekt zum Mitnehmen.", image: menuBoxAsset.url, tag: "To Go" },
-  { name: "Döner Wrap", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: wrapImage, tag: "Klassiker" },
+  { name: "Döner Wrap", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: menuWrapAsset.url, tag: "Klassiker" },
   { name: "Halloumi Wrap", desc: "Gegrillter Halloumi, buntes Gemüse und Kräuter — 100% vegetarisch.", image: menuVeggie, tag: "Vegetarisch" },
   { name: "Falafel Bowl", desc: "Hausgemachte, knusprige Falafel mit Hummus, Salat und Tahini.", image: menuFalafel, tag: "Vegan" },
   { name: "Veggie Teller", desc: "Reis, gegrilltes Gemüse, Hummus und Salat — herzhaft & leicht.", image: menuVeggie, tag: "Vegetarisch" },
