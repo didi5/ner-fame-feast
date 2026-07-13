@@ -63,8 +63,8 @@ const Hero = () => {
     <section className="relative min-h-screen w-full overflow-hidden bg-foreground">
       <div className="absolute inset-0">
         <img src={menuPlateAsset.url} alt="Frischer Dönerteller" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/60 to-transparent md:from-foreground/95 md:via-foreground/55 md:to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/40 to-transparent md:from-foreground/75 md:via-foreground/35 md:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-foreground/45 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-28 pt-28 pb-32">
