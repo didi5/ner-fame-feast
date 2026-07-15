@@ -4,7 +4,9 @@ import menuPlateAsset from "@/assets/menu-plate.png.asset.json";
 import menuBoxAsset from "@/assets/menu-box.png.asset.json";
 import menuLahmacunAsset from "@/assets/menu-lahmacun.png.asset.json";
 import menuBoardAsset from "@/assets/menu-board.png.asset.json";
-import chickenNuggetsAsset from "@/assets/chicken-nuggets.jpg.asset.json";
+import chickenNuggetsAsset from "@/assets/chicken-nuggets-new.png.asset.json";
+import donerboxSalatAsset from "@/assets/donerbox-salat.png.asset.json";
+import duerumAsset from "@/assets/duerum.png.asset.json";
 import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
@@ -148,6 +150,8 @@ const menu = [
   { name: "Dönerbox", desc: "Deine Lieblings-Zutaten in der Box — perfekt zum Mitnehmen.", image: menuBoxAsset.url, tag: "To Go" },
   { name: "Türkischer Wrap", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: menuLahmacunAsset.url, tag: "Klassiker" },
   { name: "Chicken Nuggets mit Pommes", desc: "Ganz neu bei uns: Chicken Nuggets mit Pommes und Soße nach Wahl — immer frisch und warm.", image: chickenNuggetsAsset.url, tag: "Neu" },
+  { name: "Dönerbox mit Salat", desc: "Knackiger Salat, saftiges Döner-Fleisch und cremige Soße — alles in einer Box.", image: donerboxSalatAsset.url, tag: "To Go" },
+  { name: "Dürum", desc: "Der unwiderstehliche türkische Wrap.", image: duerumAsset.url, tag: "Klassiker" },
 ];
 
 const Menu = () => (
