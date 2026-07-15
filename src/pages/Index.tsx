@@ -4,6 +4,7 @@ import menuPlateAsset from "@/assets/menu-plate.png.asset.json";
 import menuBoxAsset from "@/assets/menu-box.png.asset.json";
 import menuLahmacunAsset from "@/assets/menu-lahmacun.png.asset.json";
 import menuBoardAsset from "@/assets/menu-board.png.asset.json";
+import chickenNuggetsAsset from "@/assets/chicken-nuggets.jpg.asset.json";
 import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
@@ -143,9 +144,10 @@ const Hero = () => {
 };
 
 const menu = [
-  { name: "Dönerteller", desc: "Zartes Döner-Fleisch mit Reis, gegrilltem Gemüse & Knoblauch-Joghurt.", image: menuPlateAsset.url, tag: "Klassiker" },
+  { name: "Dönerteller", desc: "Zartes Döner-Fleisch mit Reis, frischem Gemüse & Soße nach Wahl.", image: menuPlateAsset.url, tag: "Klassiker" },
   { name: "Dönerbox", desc: "Deine Lieblings-Zutaten in der Box — perfekt zum Mitnehmen.", image: menuBoxAsset.url, tag: "To Go" },
   { name: "Türkischer Wrap", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: menuLahmacunAsset.url, tag: "Klassiker" },
+  { name: "Chicken Nuggets mit Pommes", desc: "Ganz neu bei uns: Chicken Nuggets mit Pommes und Soße nach Wahl — immer frisch und warm.", image: chickenNuggetsAsset.url, tag: "Neu" },
 ];
 
 const Menu = () => (
