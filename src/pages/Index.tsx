@@ -9,7 +9,39 @@ import donerboxSalatAsset from "@/assets/donerbox-salat.png.asset.json";
 import duerumAsset from "@/assets/duerum.png.asset.json";
 import logo from "@/assets/logo.jpeg";
 
-const Navbar = () => (
+// Returns current open state based on Europe/Berlin time and our hours.
+// Mo-Do: 10-19, Fr: 10-20, Sa: 10-20, So: closed.
+const useIsOpen = () => {
+  const [open, setOpen] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Europe/Berlin",
+        weekday: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      }).formatToParts(new Date());
+      const weekday = parts.find((p) => p.type === "weekday")?.value ?? "";
+      const hour = parseInt(parts.find((p) => p.type === "hour")?.value ?? "0", 10);
+      const minute = parseInt(parts.find((p) => p.type === "minute")?.value ?? "0", 10);
+      const minutes = hour * 60 + minute;
+      const openAt = 10 * 60;
+      let closeAt = 0;
+      if (["Mon", "Tue", "Wed", "Thu"].includes(weekday)) closeAt = 19 * 60;
+      else if (weekday === "Fri" || weekday === "Sat") closeAt = 20 * 60;
+      setOpen(minutes >= openAt && minutes < closeAt);
+    };
+    check();
+    const id = setInterval(check, 60000);
+    return () => clearInterval(id);
+  }, []);
+  return open;
+};
+
+const Navbar = () => {
+  const isOpen = useIsOpen();
+  return (
   <nav className="fixed top-0 left-0 right-0 z-50">
     <div className="mx-auto flex items-center justify-between px-6 md:px-10 py-5">
       <a href="#" className="flex items-center gap-3">
@@ -27,12 +59,13 @@ const Navbar = () => (
         href="#besuch"
         className="inline-flex items-center gap-2 bg-background text-primary px-4 py-2 rounded-full text-xs font-medium uppercase tracking-[0.2em] hover:bg-background/90 transition-colors"
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-        Jetzt geöffnet
+        <span className={`w-1.5 h-1.5 rounded-full ${isOpen ? "bg-primary animate-pulse" : "bg-muted-foreground"}`} />
+        {isOpen ? "Jetzt geöffnet" : "Aktuell geschlossen"}
       </a>
     </div>
   </nav>
-);
+  );
+};
 
 const Marquee = () => {
   const items = ["Handgemachter Döner", "Seit 2024", "NOVA Shoppingcenter", "Leuna, Deutschland", "Täglich frisch", "Vegetarische Auswahl"];
