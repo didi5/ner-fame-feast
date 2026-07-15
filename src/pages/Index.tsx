@@ -4,6 +4,7 @@ import menuPlateAsset from "@/assets/menu-plate.png.asset.json";
 import menuBoxAsset from "@/assets/menu-box.png.asset.json";
 import menuLahmacunAsset from "@/assets/menu-lahmacun.png.asset.json";
 import menuBoardAsset from "@/assets/menu-board.png.asset.json";
+import chickenNuggetsAsset from "@/assets/chicken-nuggets.jpg.asset.json";
 import logo from "@/assets/logo.jpeg";
 
 const Navbar = () => (
