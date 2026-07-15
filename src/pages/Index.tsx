@@ -184,7 +184,7 @@ const menu = [
   { name: "Lahmacun", desc: "Saftiges Döner-Fleisch, frischer Salat und unsere Signature-Sauce.", image: menuLahmacunAsset.url, tag: "Klassiker" },
   { name: "Chicken Nuggets mit Pommes", desc: "Ganz neu bei uns: Chicken Nuggets mit Pommes und Soße nach Wahl — immer frisch und warm.", image: chickenNuggetsAsset.url, tag: "Neu" },
   { name: "Dönerbox mit Salat", desc: "Knackiger Salat, saftiges Döner-Fleisch und cremige Soße — alles in einer Box.", image: donerboxSalatAsset.url, tag: "To Go" },
-  { name: "Dürum", desc: "Der unwiderstehliche türkische Wrap — saftiges Fleisch, frisches Gemüse & cremige Soße.", image: duerumAsset.url, tag: "Klassiker" },
+  { name: "Dürüm", desc: "Der unwiderstehliche türkische Wrap — saftiges Fleisch, frisches Gemüse & cremige Soße.", image: duerumAsset.url, tag: "Klassiker" },
 ];
 
 const Menu = () => (
